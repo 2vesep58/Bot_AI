@@ -16,6 +16,12 @@ class AmveraConfig(BaseModel):
     token: SecretStr
 
 
+class MCPConfig(BaseModel):
+    """Конфигурация MCP серверов."""
+    
+    context7_api_key: SecretStr
+
+
 class Config(BaseSettings):
     """Конфигурация приложения."""
 
@@ -28,6 +34,7 @@ class Config(BaseSettings):
 
     bot_token: SecretStr
     amvera_llm_token: SecretStr
+    context7_api_key: SecretStr
 
     @property
     def bot(self) -> BotConfig:
@@ -38,6 +45,11 @@ class Config(BaseSettings):
     def amvera(self) -> AmveraConfig:
         """Конфигурация Amvera LLM."""
         return AmveraConfig(token=self.amvera_llm_token)
+    
+    @property
+    def mcp(self) -> MCPConfig:
+        """Конфигурация MCP серверов."""
+        return MCPConfig(context7_api_key=self.context7_api_key)
 
 
 def load_config() -> Config:
