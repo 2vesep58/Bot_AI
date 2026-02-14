@@ -57,6 +57,9 @@ async def chatgpt_handler(message: Message, config: Config) -> None:
             # Показываем пользователю, что бот обрабатывает запрос
             await message.answer("⏳ Обрабатываю ваш запрос...")
             
+            # Отправляем действие "печатает" пользователю
+            await message.bot.send_chat_action(message.chat.id, "typing")
+            
             # Создаем сервис и получаем ответ
             llm_service = AmveraLLMService(config)
             response = await llm_service.get_response(message.text)
