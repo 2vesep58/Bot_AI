@@ -4,3 +4,6 @@ aiohttp==3.9.5
 certifi==2026.1.4
 magic-filter==1.0.12
 typing-extensions==4.15.0
+python-dotenv==1.0.0
+requests==2.31.0
+pydantic-settings==2.1.0

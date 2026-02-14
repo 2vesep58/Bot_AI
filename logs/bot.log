@@ -229,3 +229,149 @@
 2026-02-13 17:03:30,055 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
 2026-02-13 17:03:30,315 - root - INFO - Бот остановлен
 2026-02-13 17:03:30,317 - aiogram.dispatcher - INFO - Polling stopped for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
+2026-02-14 16:20:41,153 - root - INFO - Бот запущен
+2026-02-14 16:20:41,166 - aiogram.dispatcher - INFO - Start polling
+2026-02-14 16:20:41,409 - aiogram.dispatcher - INFO - Run polling for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
+2026-02-14 16:20:41,512 - root - INFO - Получено сообщение от пользователя 6864407494: Привет!
+2026-02-14 16:20:41,512 - root - INFO - Пользователь 6864407494 не находится в режиме ChatGPT, сообщение обрабатывается другими роутерами
+2026-02-14 16:20:41,513 - aiogram.event - INFO - Update id=131773524 is handled. Duration 0 ms by bot id=8563875743
+2026-02-14 16:20:41,808 - aiogram.event - INFO - Update id=131773523 is handled. Duration 296 ms by bot id=8563875743
+2026-02-14 16:21:21,561 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-14 16:21:21,783 - aiogram.event - INFO - Update id=131773525 is handled. Duration 233 ms by bot id=8563875743
+2026-02-14 16:21:58,063 - root - INFO - Получено сообщение от пользователя 6864407494: Расскажи анекдот.
+2026-02-14 16:21:58,063 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:21:58,064 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:21:58,446 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM
+2026-02-14 16:21:58,558 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 404
+2026-02-14 16:21:58,559 - src.bot.services.amvera_llm - ERROR - Ошибка от Amvera LLM: 404 - 404 page not found
+
+2026-02-14 16:21:58,690 - aiogram.event - INFO - Update id=131773526 is handled. Duration 625 ms by bot id=8563875743
+2026-02-14 16:24:05,427 - root - INFO - Получено сообщение от пользователя 6864407494: Который час?
+2026-02-14 16:24:05,427 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:24:05,428 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:24:05,791 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM
+2026-02-14 16:24:05,872 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 404
+2026-02-14 16:24:05,873 - src.bot.services.amvera_llm - ERROR - Ошибка от Amvera LLM: 404 - 404 page not found
+
+2026-02-14 16:24:05,965 - aiogram.event - INFO - Update id=131773527 is handled. Duration 530 ms by bot id=8563875743
+2026-02-14 16:26:00,245 - root - INFO - Получено сообщение от пользователя 6864407494: Какая погода в Москве?
+2026-02-14 16:26:00,246 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:26:00,246 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:26:00,580 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM
+2026-02-14 16:26:00,657 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 404
+2026-02-14 16:26:00,657 - src.bot.services.amvera_llm - ERROR - Ошибка от Amvera LLM: 404 - 404 page not found
+
+2026-02-14 16:26:00,760 - aiogram.event - INFO - Update id=131773528 is handled. Duration 515 ms by bot id=8563875743
+2026-02-14 16:40:36,101 - root - INFO - Получено сообщение от пользователя 6864407494: Привет!
+2026-02-14 16:40:36,102 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:40:36,102 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:40:36,439 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM
+2026-02-14 16:40:36,518 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 404
+2026-02-14 16:40:36,518 - src.bot.services.amvera_llm - ERROR - Ошибка от Amvera LLM: 404 - 404 page not found
+
+2026-02-14 16:40:36,610 - aiogram.event - INFO - Update id=131773529 is handled. Duration 516 ms by bot id=8563875743
+2026-02-14 16:42:18,034 - root - INFO - Бот запущен
+2026-02-14 16:42:18,035 - aiogram.dispatcher - INFO - Start polling
+2026-02-14 16:42:18,335 - aiogram.dispatcher - INFO - Run polling for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
+2026-02-14 16:42:18,401 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:18,402 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 16:42:22,515 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:22,516 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 16:42:23,597 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:23,599 - aiogram.dispatcher - WARNING - Sleep for 1.180491 seconds and try again... (tryings = 1, bot id = 8563875743)
+2026-02-14 16:42:27,856 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:27,857 - aiogram.dispatcher - WARNING - Sleep for 1.185896 seconds and try again... (tryings = 1, bot id = 8563875743)
+2026-02-14 16:42:29,101 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:29,102 - aiogram.dispatcher - WARNING - Sleep for 1.567291 seconds and try again... (tryings = 2, bot id = 8563875743)
+2026-02-14 16:42:33,751 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:33,752 - aiogram.dispatcher - WARNING - Sleep for 1.421923 seconds and try again... (tryings = 2, bot id = 8563875743)
+2026-02-14 16:42:35,240 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:35,241 - aiogram.dispatcher - WARNING - Sleep for 2.082359 seconds and try again... (tryings = 3, bot id = 8563875743)
+2026-02-14 16:42:38,015 - aiogram.dispatcher - INFO - Connection established (tryings = 4, bot id = 8563875743)
+2026-02-14 16:42:38,018 - root - INFO - Получено сообщение от пользователя 6864407494: Привет!
+2026-02-14 16:42:38,018 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:42:38,019 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:42:38,340 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM
+2026-02-14 16:42:38,417 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 404
+2026-02-14 16:42:38,418 - src.bot.services.amvera_llm - ERROR - Ошибка от Amvera LLM: 404 - 404 page not found
+
+2026-02-14 16:42:38,531 - aiogram.event - INFO - Update id=131773530 is handled. Duration 515 ms by bot id=8563875743
+2026-02-14 16:42:40,398 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:40,399 - aiogram.dispatcher - WARNING - Sleep for 1.963853 seconds and try again... (tryings = 3, bot id = 8563875743)
+2026-02-14 16:42:42,429 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:42,430 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 16:42:46,504 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:46,506 - aiogram.dispatcher - WARNING - Sleep for 2.567332 seconds and try again... (tryings = 4, bot id = 8563875743)
+2026-02-14 16:42:49,143 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:49,145 - aiogram.dispatcher - WARNING - Sleep for 1.194377 seconds and try again... (tryings = 1, bot id = 8563875743)
+2026-02-14 16:42:53,409 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:53,409 - aiogram.dispatcher - WARNING - Sleep for 3.422577 seconds and try again... (tryings = 5, bot id = 8563875743)
+2026-02-14 16:42:56,912 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:42:56,914 - aiogram.dispatcher - WARNING - Sleep for 1.394018 seconds and try again... (tryings = 2, bot id = 8563875743)
+2026-02-14 16:43:01,384 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:01,384 - aiogram.dispatcher - WARNING - Sleep for 4.483825 seconds and try again... (tryings = 6, bot id = 8563875743)
+2026-02-14 16:43:05,946 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:05,946 - aiogram.dispatcher - WARNING - Sleep for 1.738345 seconds and try again... (tryings = 3, bot id = 8563875743)
+2026-02-14 16:43:10,756 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:10,757 - aiogram.dispatcher - WARNING - Sleep for 5.045988 seconds and try again... (tryings = 7, bot id = 8563875743)
+2026-02-14 16:43:15,874 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:15,876 - aiogram.dispatcher - WARNING - Sleep for 2.135555 seconds and try again... (tryings = 4, bot id = 8563875743)
+2026-02-14 16:43:21,093 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:21,095 - aiogram.dispatcher - WARNING - Sleep for 5.009400 seconds and try again... (tryings = 8, bot id = 8563875743)
+2026-02-14 16:43:26,172 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:26,174 - aiogram.dispatcher - WARNING - Sleep for 2.746543 seconds and try again... (tryings = 5, bot id = 8563875743)
+2026-02-14 16:43:31,992 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:31,993 - aiogram.dispatcher - WARNING - Sleep for 5.155677 seconds and try again... (tryings = 9, bot id = 8563875743)
+2026-02-14 16:43:37,219 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:37,220 - aiogram.dispatcher - WARNING - Sleep for 3.681030 seconds and try again... (tryings = 6, bot id = 8563875743)
+2026-02-14 16:43:40,971 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-14 16:43:40,972 - aiogram.dispatcher - WARNING - Sleep for 5.110435 seconds and try again... (tryings = 10, bot id = 8563875743)
+2026-02-14 16:46:49,049 - root - INFO - Бот запущен
+2026-02-14 16:46:49,049 - aiogram.dispatcher - INFO - Start polling
+2026-02-14 16:46:49,255 - aiogram.dispatcher - INFO - Run polling for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
+2026-02-14 16:46:49,346 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-14 16:46:49,602 - aiogram.event - INFO - Update id=131773531 is handled. Duration 250 ms by bot id=8563875743
+2026-02-14 16:47:13,323 - root - INFO - Получено сообщение от пользователя 6864407494: Как дела?
+2026-02-14 16:47:13,324 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:47:13,324 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:47:13,671 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-14 16:47:18,264 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-14 16:47:18,288 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9AHLRf5vXqJ9A3ATc2VarftGdM11', 'object': 'chat.completion', 'created': 1771076835, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Спасибо, всё отлично! Чем могу помочь?', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 9, 'completion_tokens': 146, 'total_tokens': 155, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 128, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-14 16:47:18,289 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Спасибо, всё отлично! Чем могу помочь?
+2026-02-14 16:47:18,450 - aiogram.event - INFO - Update id=131773532 is handled. Duration 5125 ms by bot id=8563875743
+2026-02-14 16:47:36,493 - root - INFO - Получено сообщение от пользователя 6864407494: Что ты умеешь?
+2026-02-14 16:47:36,494 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:47:36,494 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:47:36,893 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-14 16:47:59,313 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-14 16:47:59,314 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9AHh9grJI0SDiVRjtvYLxXeG0R7Z', 'object': 'chat.completion', 'created': 1771076857, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Коротко о том, чем я могу помочь:\n- Отвечать на вопросы и объяснять сложные темы простым языком\n- Писать и редактировать тексты: письма, резюме, статьи, посты; улучшать стиль, сокращать/расширять\n- Придумывать идеи: названия, слоганы, сюжеты, сценарии, контент-планы\n- Переводить и проверять грамматику (RU, EN и др.), помогать с изучением языков\n- Суммировать и структурировать информацию; извлекать факты из текста/таблиц, делать сравнения и чек-листы\n- Помогать с математикой и STEM: решения с пошаговыми объяснениями\n- Программирование: писать и разбирать код (Python, JS, SQL и др.), объяснять алгоритмы, помогать с отладкой и тестами\n- Планирование: учебные дорожные карты, расписания, планы проектов, подготовка к собеседованиям\n\nОграничения:\n- Без доступа к интернету и актуальным базам по умолчанию\n- Могу ошибаться; критичное лучше перепроверять\n- Не совершаю действий в реальном мире и не храню ваши данные между сессиями\n\nСкажите, что нужно сделать сейчас и в каком формате вы хотите ответ (кратко, пошагово, код, список и т. п.).', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 11, 'completion_tokens': 1086, 'total_tokens': 1097, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 768, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-14 16:47:59,317 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Коротко о том, чем я могу помочь:
+- Отвечать на вопросы и объяснять сложные темы простым языком
+- Писать и редактировать тексты: письма, резюме, статьи, посты; улучшать стиль, сокращать/расширять
+- Придумывать идеи: названия, слоганы, сюжеты, сценарии, контент-планы
+- Переводить и проверять грамматику (RU, EN и др.), помогать с изучением языков
+- Суммировать и структурировать информацию; извлекать факты из текста/таблиц, делать сравнения и чек-листы
+- Помогать с математикой и STEM: решения с пошаговыми объяснениями
+- Программирование: писать и разбирать код (Python, JS, SQL и др.), объяснять алгоритмы, помогать с отладкой и тестами
+- Планирование: учебные дорожные карты, расписания, планы проектов, подготовка к собеседованиям
+
+Ограничения:
+- Без доступа к интернету и актуальным базам по умолчанию
+- Могу ошибаться; критичное лучше перепроверять
+- Не совершаю действий в реальном мире и не храню ваши данные между сессиями
+
+Скажите, что нужно сделать сейчас и в каком формате вы хотите ответ (кратко, пошагово, код, список и т. п.).
+2026-02-14 16:47:59,545 - aiogram.event - INFO - Update id=131773533 is handled. Duration 23046 ms by bot id=8563875743
+2026-02-14 16:48:12,386 - root - INFO - Получено сообщение от пользователя 6864407494: Расскажи анекдот про зятя.
+2026-02-14 16:48:12,387 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 16:48:12,388 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 16:48:12,587 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-14 16:48:29,015 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-14 16:48:29,038 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9AIH3MQ2EdR2yZSj4DjyerwxdumV', 'object': 'chat.completion', 'created': 1771076893, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Едут зять с тёщей в автобусе без билетов. Контролёр: \n— Ваши билеты?\nТёща шепчет: \n— Скажи, что ты мой сын.\nЗять:\n— Не могу — я уже женат.', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 18, 'completion_tokens': 771, 'total_tokens': 789, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 704, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-14 16:48:29,040 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Едут зять с тёщей в автобусе без билетов. Контролёр: 
+— Ваши билеты?
+Тёща шепчет: 
+— Скажи, что ты мой сын.
+Зять:
+— Не могу — я уже женат.
+2026-02-14 16:48:29,269 - aiogram.event - INFO - Update id=131773534 is handled. Duration 16890 ms by bot id=8563875743

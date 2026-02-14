@@ -1,17 +1,12 @@
 from aiogram import Router, F
 from aiogram.types import Message
 from aiogram.filters import Command
-import aiohttp
-import json
 import logging
-import ssl
 
 from src.bot.config import Config
+from src.bot.services.amvera_llm import AmveraLLMService
 
 chatgpt_router = Router()
-
-# URL для доступа к API Amvera LLM
-AMVERA_LLM_URL = "https://lllm.amvera.io/v1/chat/completions"
 
 # Храним состояние активации ChatGPT для каждого пользователя
 chatgpt_active = {}
@@ -59,51 +54,18 @@ async def chatgpt_handler(message: Message, config: Config) -> None:
         if message.text and not message.text.startswith('/'):
             logging.info(f"Отправка запроса к Amvera LLM для пользователя {message.from_user.id}")
             
-            # Формируем запрос к API Amvera LLM
-            payload = {
-                "model": "gpt-5",
-                "messages": [
-                    {
-                        "role": "user",
-                        "content": message.text
-                    }
-                ]
-            }
-
-            headers = {
-                "Content-Type": "application/json",
-                "Accept": "application/json",
-                "Authorization": f"Bearer {config.amvera.token.get_secret_value()}"
-            }
-
-            # Отключаем проверку SSL-сертификата (только для тестирования!)
-            ssl_context = ssl.create_default_context()
-            ssl_context.check_hostname = False
-            ssl_context.verify_mode = ssl.CERT_NONE
-
-            try:
-                logging.info(f"Отправка запроса к Amvera LLM: {payload}")
-                logging.info(f"Заголовки запроса: {headers}")
-                # Отправляем запрос к API Amvera LLM
-                async with aiohttp.ClientSession() as session:
-                    async with session.post(AMVERA_LLM_URL, json=payload, headers=headers, ssl=ssl_context) as response:
-                        logging.info(f"Статус ответа от Amvera LLM: {response.status}")
-                        if response.status == 200:
-                            # Получаем ответ от API
-                            result = await response.json()
-                            logging.info(f"Ответ от Amvera LLM: {result}")
-                            # Отправляем ответ пользователю
-                            await message.answer(result["choices"][0]["message"]["content"])
-                        else:
-                            error_text = await response.text()
-                            logging.error(f"Ошибка от Amvera LLM: {response.status} - {error_text}")
-                            await message.answer("Произошла ошибка при обращении к ИИ. Код ошибки: " + str(response.status))
-            except Exception as e:
-                # Обрабатываем возможные ошибки
-                logging.error(f"Исключение при обращении к Amvera LLM: {e}")
+            # Показываем пользователю, что бот обрабатывает запрос
+            await message.answer("⏳ Обрабатываю ваш запрос...")
+            
+            # Создаем сервис и получаем ответ
+            llm_service = AmveraLLMService(config)
+            response = await llm_service.get_response(message.text)
+            
+            if response:
+                await message.answer(response)
+            else:
                 await message.answer("Произошла ошибка при обращении к ИИ. Пожалуйста, попробуйте позже.")
         else:
             logging.info(f"Сообщение пользователя {message.from_user.id} является командой, пропускаем")
     else:
         logging.info(f"Пользователь {message.from_user.id} не находится в режиме ChatGPT, сообщение обрабатывается другими роутерами")
-        # Если режим ChatGPT не активирован, сообщение обрабатывается другими роутерами (например, эхо)

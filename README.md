@@ -1,12 +1,12 @@
 # Telegram Бот с ИИ Amvera
 
-Telegram-бот на Python с интеграцией ИИ Amvera для генерации текстов.
+Telegram-бот на Python с интеграцией ИИ Amvera (модель gpt-5) для генерации текстов.
 
 ## Функциональность
 
 - `/start` - приветственное сообщение
 - `/help` - справка по командам
-- `/chatgpt` - взаимодействие с ИИ Amvera
+- `/chatgpt` - взаимодействие с ИИ Amvera (модель gpt-5)
 - `/stop` - остановка диалога с ИИ
 - Эхо-функциональность для всех остальных сообщений
 
@@ -31,7 +31,8 @@ pip install -r requirements.txt
 
 ```env
 BOT_TOKEN=ваш_токен_бота
-AMVERA_TOKEN=ваш_токен_amvera
+AMVERA_LLM_TOKEN=ваш_токен_amvera_llm
+CONTEXT7_API_KEY=ваш_ключ_context7
 ```
 
 ### Запуск бота
@@ -65,23 +66,57 @@ python -m src.bot.main
 │     │  └─ common.py
 │     ├─ services/
 │     │  ├─ __init__.py
-│     │  └─ text.py
+│     │  ├─ text.py
+│     │  └─ amvera_llm.py
 │     └─ utils/
 │        ├─ __init__.py
 │        └─ logging.py
 └─ tests/
    ├─ __init__.py
-   └─ test_text_service.py
+   ├─ test_chatgpt_router.py
+   ├─ test_amvera_llm_service.py
+   └─ ...
 ```
 
 ## Команды бота
 
 - `/start` - запуск бота и приветственное сообщение
 - `/help` - справка по командам
-- `/chatgpt` - начало диалога с ИИ Amvera
+- `/chatgpt` - начало диалога с ИИ Amvera (модель gpt-5)
 - `/stop` - завершение диалога с ИИ Amvera
-- Любое другое сообщение - эхо-ответ
+- Любое другое сообщение - эхо-ответ (если не активирован режим ChatGPT)
 
-## Интеграция с Amvera
+## Интеграция с Amvera LLM
 
-Бот использует API Amvera для генерации текстов. Для работы этой функции необходим токен API Amvera, который должен быть указан в переменных окружения.
+Бот использует API Amvera для генерации текстов с помощью модели gpt-5. 
+
+### Как использовать
+
+1. Отправьте команду `/chatgpt` для активации режима ИИ
+2. Отправьте любое сообщение, и бот ответит с помощью ИИ Amvera
+3. Отправьте команду `/stop` для выхода из режима ИИ
+
+### Конфигурация
+
+Для работы этой функции необходимо:
+- Получить API токен Amvera LLM
+- Добавить токен в переменную окружения `AMVERA_LLM_TOKEN`
+
+### Документация API
+
+- Swagger: https://lllm-swagger-amvera-services.amvera.io/openapi.yaml
+- Документация: https://lllm-swagger-amvera-services.amvera.io/#/GPT/post_models_gpt
+
+## Тестирование
+
+Для запуска тестов используйте:
+
+```bash
+pytest
+```
+
+Для запуска тестов с покрытием:
+
+```bash
+pytest --cov=src
+```
