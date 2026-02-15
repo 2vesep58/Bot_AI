@@ -632,3 +632,55 @@ client_session: <aiohttp.client.ClientSession object at 0x0000000008E63F50>
 connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000000008E3E740>, 279226.078)]']
 connector: <aiohttp.connector.TCPConnector object at 0x00000000072D4990>
 2026-02-15 00:43:29,891 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 11:38:34,651 - root - INFO - Бот запущен
+2026-02-15 11:38:34,671 - aiogram.dispatcher - INFO - Start polling
+2026-02-15 11:38:35,319 - aiogram.dispatcher - INFO - Run polling for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
+2026-02-15 11:39:16,810 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-15 11:39:17,135 - aiogram.event - INFO - Update id=131773541 is handled. Duration 358 ms by bot id=8563875743
+2026-02-15 11:39:24,394 - aiogram.event - INFO - Update id=131773542 is handled. Duration 188 ms by bot id=8563875743
+2026-02-15 11:39:40,563 - root - INFO - Получено сообщение от пользователя 6864407494: Который час?
+2026-02-15 11:39:40,564 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-15 11:39:40,564 - root - INFO - Пользователь 6864407494 выбрал режим работы ИИ: normal
+2026-02-15 11:39:40,564 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-15 11:39:41,049 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-15 11:39:58,021 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-15 11:39:58,022 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9RxG8UjB4mjdMTYzby4RzCKuc8LM', 'object': 'chat.completion', 'created': 1771144782, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Мне недоступно текущее время. По моей дате сейчас 15 февраля 2026 года. Пожалуйста, посмотрите время на вашем устройстве. Если скажете город или часовой пояс, помогу с переводом времени между местами.', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 11, 'completion_tokens': 638, 'total_tokens': 649, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 576, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-15 11:39:58,024 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Мне недоступно текущее время. По моей дате сейчас 15 февраля 2026 года. Пожалуйста, посмотрите время на вашем устройстве. Если скажете город или часовой пояс, помогу с переводом времени между местами.
+2026-02-15 11:39:58,273 - aiogram.event - INFO - Update id=131773543 is handled. Duration 17719 ms by bot id=8563875743
+2026-02-15 11:40:21,247 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-15 11:40:21,491 - aiogram.event - INFO - Update id=131773544 is handled. Duration 250 ms by bot id=8563875743
+2026-02-15 11:40:24,371 - aiogram.event - INFO - Update id=131773545 is handled. Duration 93 ms by bot id=8563875743
+2026-02-15 11:40:45,677 - root - INFO - Получено сообщение от пользователя 6864407494: Собака
+2026-02-15 11:40:45,677 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-15 11:40:45,678 - root - INFO - Пользователь 6864407494 выбрал режим работы ИИ: ascii
+2026-02-15 11:40:45,678 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-15 11:40:46,121 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-15 11:41:07,633 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-15 11:41:07,633 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9RyJaZ6OiRr1rTAXamZo8OmdlV0E', 'object': 'chat.completion', 'created': 1771144847, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '        /^-----^\\\n       V  o o  V\n        |  Y  |\n         \\ Q /\n         / - \\\n         |    \\\n         |     \\     )\n         || (___\\====', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 19, 'completion_tokens': 820, 'total_tokens': 839, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 768, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-15 11:41:07,636 - src.bot.services.amvera_llm - INFO - Извлеченный контент:         /^-----^\
+       V  o o  V
+        |  Y  |
+         \ Q /
+         / - \
+         |    \
+         |     \     )
+         || (___\====
+2026-02-15 11:41:07,899 - aiogram.event - INFO - Update id=131773546 is handled. Duration 22219 ms by bot id=8563875743
+2026-02-15 11:41:22,572 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-15 11:41:22,668 - aiogram.event - INFO - Update id=131773547 is handled. Duration 92 ms by bot id=8563875743
+2026-02-15 11:41:26,014 - aiogram.event - INFO - Update id=131773548 is handled. Duration 94 ms by bot id=8563875743
+2026-02-15 11:41:52,535 - root - INFO - Получено сообщение от пользователя 6864407494: Ты кто?
+2026-02-15 11:41:52,536 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-15 11:41:52,537 - root - INFO - Пользователь 6864407494 выбрал режим работы ИИ: translate
+2026-02-15 11:41:52,538 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-15 11:41:53,213 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-15 11:41:58,629 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-15 11:41:58,630 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9RzOg030eneILvb3zaVJU4aBAXs1', 'object': 'chat.completion', 'created': 1771144914, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Who are you?', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 19, 'completion_tokens': 141, 'total_tokens': 160, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 128, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-15 11:41:58,632 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Who are you?
+2026-02-15 11:41:58,719 - aiogram.event - INFO - Update id=131773549 is handled. Duration 6188 ms by bot id=8563875743
+2026-02-15 11:42:31,727 - root - INFO - Пользователь 6864407494 деактивировал режим ChatGPT
+2026-02-15 11:42:31,948 - aiogram.event - INFO - Update id=131773550 is handled. Duration 218 ms by bot id=8563875743
+2026-02-15 12:11:51,158 - aiogram.dispatcher - INFO - Polling stopped
+2026-02-15 12:11:51,158 - root - INFO - Бот остановлен
+2026-02-15 12:11:51,412 - root - INFO - Бот остановлен
+2026-02-15 12:11:51,414 - aiogram.dispatcher - INFO - Polling stopped for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
