@@ -375,3 +375,260 @@
 Зять:
 — Не могу — я уже женат.
 2026-02-14 16:48:29,269 - aiogram.event - INFO - Update id=131773534 is handled. Duration 16890 ms by bot id=8563875743
+2026-02-14 20:27:11,697 - root - INFO - Бот запущен
+2026-02-14 20:27:11,703 - aiogram.dispatcher - INFO - Start polling
+2026-02-14 20:27:12,472 - aiogram.dispatcher - INFO - Run polling for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
+2026-02-14 20:27:43,030 - root - INFO - Получено сообщение от пользователя 6864407494: Какой сегодня день?
+2026-02-14 20:27:43,031 - root - INFO - Пользователь 6864407494 не находится в режиме ChatGPT, сообщение обрабатывается другими роутерами
+2026-02-14 20:27:43,032 - aiogram.event - INFO - Update id=131773535 is handled. Duration 45 ms by bot id=8563875743
+2026-02-14 20:28:22,646 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-14 20:28:23,081 - aiogram.event - INFO - Update id=131773536 is handled. Duration 436 ms by bot id=8563875743
+2026-02-14 20:28:42,620 - root - INFO - Получено сообщение от пользователя 6864407494: Какой сегодня день?
+2026-02-14 20:28:42,621 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 20:28:42,621 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 20:28:43,135 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-14 20:29:08,718 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-14 20:29:08,718 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9DjgI9kX6K7HKUuBK7WqXacjPwdM', 'object': 'chat.completion', 'created': 1771090124, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Сегодня суббота, 14 февраля 2026 года.', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 11, 'completion_tokens': 790, 'total_tokens': 801, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 768, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-14 20:29:08,720 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Сегодня суббота, 14 февраля 2026 года.
+2026-02-14 20:29:09,001 - aiogram.event - INFO - Update id=131773537 is handled. Duration 26390 ms by bot id=8563875743
+2026-02-14 20:29:38,976 - root - INFO - Получено сообщение от пользователя 6864407494: Какой праздник?
+2026-02-14 20:29:38,977 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 20:29:38,977 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 20:29:39,425 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-14 20:30:09,750 - src.bot.services.amvera_llm - ERROR - Timeout при обращении к Amvera LLM
+2026-02-14 20:30:10,024 - aiogram.event - INFO - Update id=131773538 is handled. Duration 31047 ms by bot id=8563875743
+2026-02-14 20:30:42,591 - root - INFO - Получено сообщение от пользователя 6864407494: День Святого Валентина слышал?
+2026-02-14 20:30:42,592 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-14 20:30:42,592 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-14 20:30:43,061 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-14 20:30:56,382 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-14 20:30:56,398 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9Dlc9buChWeT4Ijj5fk2cu9ySS5W', 'object': 'chat.completion', 'created': 1771090244, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Да, конечно! 14 февраля — День святого Валентина. Могу помочь с:\n- идеями подарков или свидания (дом/город/дистанционно),\n- короткими и трогательными поздравлениями,\n- DIY-открытками и небольшими сюрпризами,\n- рецептами романтического ужина,\n- вариантами «анти-Валентина», если не хочется пафоса.\n\nЧто именно тебе нужно?', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 16, 'completion_tokens': 363, 'total_tokens': 379, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 256, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-14 20:30:56,401 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Да, конечно! 14 февраля — День святого Валентина. Могу помочь с:
+- идеями подарков или свидания (дом/город/дистанционно),
+- короткими и трогательными поздравлениями,
+- DIY-открытками и небольшими сюрпризами,
+- рецептами романтического ужина,
+- вариантами «анти-Валентина», если не хочется пафоса.
+
+Что именно тебе нужно?
+2026-02-14 20:30:56,499 - aiogram.event - INFO - Update id=131773539 is handled. Duration 13922 ms by bot id=8563875743
+2026-02-14 20:31:04,522 - root - INFO - Пользователь 6864407494 деактивировал режим ChatGPT
+2026-02-14 20:31:04,608 - aiogram.event - INFO - Update id=131773540 is handled. Duration 77 ms by bot id=8563875743
+2026-02-14 22:23:13,166 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-14 22:23:13,471 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 22:23:24,881 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 22:23:24,906 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-14 22:23:24,906 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 22:23:36,130 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 22:25:57,136 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-14 22:25:57,137 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 22:26:08,389 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 22:26:08,391 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-14 22:26:08,391 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 22:26:19,651 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 23:00:07,701 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:00:07,707 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:00:16,137 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:00:16,138 - aiogram.dispatcher - WARNING - Sleep for 1.227640 seconds and try again... (tryings = 1, bot id = 8563875743)
+2026-02-14 23:00:27,446 - aiogram.dispatcher - INFO - Connection established (tryings = 2, bot id = 8563875743)
+2026-02-14 23:00:39,135 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:00:39,136 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:00:50,220 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 23:01:13,454 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:01:13,455 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:01:24,527 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 23:02:03,949 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:02:03,950 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:02:15,031 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 23:03:32,425 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:03:32,426 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:03:43,509 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 23:06:27,051 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:06:27,052 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:06:38,151 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 23:11:46,117 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-14 23:11:46,118 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:11:57,201 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-14 23:57:36,157 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-14 23:57:36,159 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-14 23:57:47,379 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:01:59,024 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-15 00:01:59,025 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:02:10,229 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:03:27,989 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-15 00:03:27,990 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:03:39,261 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:32:41,492 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-15 00:32:41,493 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:32:52,774 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:33:02,844 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-15 00:33:02,845 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:33:14,097 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:33:14,099 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-15 00:33:14,100 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:33:25,373 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:33:25,391 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-02-15 00:33:25,400 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:33:36,617 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:42:13,139 - root - INFO - Запуск приложения
+2026-02-15 00:42:13,520 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-15 00:42:13,521 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:42:13,526 - asyncio - ERROR - unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<_run_app() done, defined at C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py:303> exception=TelegramBadRequest('Telegram server says - Bad Request: bad webhook: IP address 0.0.0.0 is reserved')>
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py", line 544, in run_app
+    loop.run_until_complete(main_task)
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py", line 357, in _run_app
+    await runner.setup()
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_runner.py", line 295, in setup
+    self._server = await self._make_server()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_runner.py", line 403, in _make_server
+    await self._app.startup()
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_app.py", line 456, in startup
+    await self.on_startup.send(self)
+  File "C:\Program Files\Python311\Lib\site-packages\aiosignal\__init__.py", line 52, in send
+    await receiver(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\webhook\aiohttp_server.py", line 36, in on_startup
+    await dispatcher.emit_startup(**workflow_data)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 242, in emit_startup
+    await self.startup.trigger(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\event\event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Тбот\app.py", line 41, in on_startup
+    await bot.set_webhook(
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\bot.py", line 3578, in set_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: bad webhook: IP address 0.0.0.0 is reserved
+2026-02-15 00:42:13,916 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000000070BDD10>
+2026-02-15 00:42:13,917 - asyncio - ERROR - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000000008EBE740>, 279160.781)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000000008C749D0>
+2026-02-15 00:42:24,588 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:42:55,449 - root - INFO - Запуск приложения
+2026-02-15 00:42:55,650 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-15 00:42:55,651 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:42:55,653 - asyncio - ERROR - unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<_run_app() done, defined at C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py:303> exception=TelegramBadRequest('Telegram server says - Bad Request: bad webhook: Webhook can be set up only on ports 80, 88, 443 or 8443')>
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py", line 544, in run_app
+    loop.run_until_complete(main_task)
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py", line 357, in _run_app
+    await runner.setup()
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_runner.py", line 295, in setup
+    self._server = await self._make_server()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_runner.py", line 403, in _make_server
+    await self._app.startup()
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_app.py", line 456, in startup
+    await self.on_startup.send(self)
+  File "C:\Program Files\Python311\Lib\site-packages\aiosignal\__init__.py", line 52, in send
+    await receiver(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\webhook\aiohttp_server.py", line 36, in on_startup
+    await dispatcher.emit_startup(**workflow_data)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 242, in emit_startup
+    await self.startup.trigger(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\event\event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Тбот\app.py", line 41, in on_startup
+    await bot.set_webhook(
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\bot.py", line 3578, in set_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: bad webhook: Webhook can be set up only on ports 80, 88, 443 or 8443
+2026-02-15 00:42:56,032 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000000007275AD0>
+2026-02-15 00:42:56,032 - asyncio - ERROR - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000000008E3E740>, 279202.906)]']
+connector: <aiohttp.connector.TCPConnector object at 0x0000000006FDB050>
+2026-02-15 00:43:06,716 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)
+2026-02-15 00:43:18,601 - root - INFO - Запуск приложения
+2026-02-15 00:43:18,809 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramConflictError: Telegram server says - Conflict: terminated by setWebhook request
+2026-02-15 00:43:18,810 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8563875743)
+2026-02-15 00:43:18,828 - asyncio - ERROR - unhandled exception during asyncio.run() shutdown
+task: <Task finished name='Task-1' coro=<_run_app() done, defined at C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py:303> exception=TelegramBadRequest('Telegram server says - Bad Request: bad webhook: IP address 127.0.0.1 is reserved')>
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py", line 544, in run_app
+    loop.run_until_complete(main_task)
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web.py", line 357, in _run_app
+    await runner.setup()
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_runner.py", line 295, in setup
+    self._server = await self._make_server()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_runner.py", line 403, in _make_server
+    await self._app.startup()
+  File "C:\Program Files\Python311\Lib\site-packages\aiohttp\web_app.py", line 456, in startup
+    await self.on_startup.send(self)
+  File "C:\Program Files\Python311\Lib\site-packages\aiosignal\__init__.py", line 52, in send
+    await receiver(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\webhook\aiohttp_server.py", line 36, in on_startup
+    await dispatcher.emit_startup(**workflow_data)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\router.py", line 242, in emit_startup
+    await self.startup.trigger(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\event\event.py", line 42, in trigger
+    await handler.call(*args, **kwargs)
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\Desktop\Тбот\app.py", line 41, in on_startup
+    await bot.set_webhook(
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\bot.py", line 3578, in set_webhook
+    return await self(call, request_timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\bot.py", line 441, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\base.py", line 257, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\aiohttp.py", line 179, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: bad webhook: IP address 127.0.0.1 is reserved
+2026-02-15 00:43:19,094 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000000008E63F50>
+2026-02-15 00:43:19,095 - asyncio - ERROR - Unclosed connector
+connections: ['[(<aiohttp.client_proto.ResponseHandler object at 0x0000000008E3E740>, 279226.078)]']
+connector: <aiohttp.connector.TCPConnector object at 0x00000000072D4990>
+2026-02-15 00:43:29,891 - aiogram.dispatcher - INFO - Connection established (tryings = 1, bot id = 8563875743)

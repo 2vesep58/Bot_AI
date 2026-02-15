@@ -17,13 +17,13 @@ config = load_config()
 setup_logging(config)
 
 # Получение путей из переменных окружения или использование значений по умолчанию
-WEBHOOK_HOST = config.webhook_host if hasattr(config, 'webhook_host') else '0.0.0.0'
+WEBHOOK_HOST = config.webhook_host if hasattr(config, 'webhook_host') else 'localhost'
 WEBHOOK_PORT = config.webhook_port if hasattr(config, 'webhook_port') else 80
 WEBHOOK_PATH = config.webhook_path if hasattr(config, 'webhook_path') else '/webhook'
 WEBHOOK_SECRET = config.webhook_secret if hasattr(config, 'webhook_secret') else None
 
 # URL вебхука
-WEBHOOK_URL = f"{WEBHOOK_HOST}:{WEBHOOK_PORT}{WEBHOOK_PATH}"
+WEBHOOK_URL = f"https://{WEBHOOK_HOST}:{WEBHOOK_PORT}{WEBHOOK_PATH}"
 
 # Создание бота и диспетчера
 bot = Bot(token=config.bot_token.get_secret_value())
