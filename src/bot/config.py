@@ -35,7 +35,7 @@ class Config(BaseSettings):
     bot_token: SecretStr
     amvera_llm_token: SecretStr
     context7_api_key: SecretStr
-    webhook_host: str = "localhost"
+    webhook_host: str = ""
     webhook_port: int = 443
     webhook_path: str = "/webhook"
     webhook_secret: str = ""

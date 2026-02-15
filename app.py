@@ -40,12 +40,15 @@ async def on_startup():
     """Действия при запуске приложения."""
     logging.info("Запуск приложения")
     
-    # Установка вебхука
-    await bot.set_webhook(
-        url=WEBHOOK_URL,
-        secret_token=WEBHOOK_SECRET
-    )
-    logging.info(f"Вебхук установлен: {WEBHOOK_URL}")
+    # Установка вебхука только если указан хост
+    if WEBHOOK_HOST:
+        await bot.set_webhook(
+            url=WEBHOOK_URL,
+            secret_token=WEBHOOK_SECRET
+        )
+        logging.info(f"Вебхук установлен: {WEBHOOK_URL}")
+    else:
+        logging.warning("WEBHOOK_HOST не установлен, вебхук не будет установлен")
 
 
 async def on_shutdown():
