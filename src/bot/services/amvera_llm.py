@@ -61,7 +61,7 @@ class AmveraLLMService:
                     json=payload,
                     headers=headers,
                     ssl=ssl_context,
-                    timeout=aiohttp.ClientTimeout(total=30)
+                    timeout=aiohttp.ClientTimeout(total=120)
                 ) as response:
                     self.logger.info(f"Статус ответа от Amvera LLM: {response.status}")
                     

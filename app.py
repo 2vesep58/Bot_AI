@@ -16,14 +16,17 @@ config = load_config()
 # Настройка логирования
 setup_logging(config)
 
-# Получение путей из переменных окружения или использование значений по умолчанию
-WEBHOOK_HOST = config.webhook_host if hasattr(config, 'webhook_host') else 'localhost'
-WEBHOOK_PORT = config.webhook_port if hasattr(config, 'webhook_port') else 80
-WEBHOOK_PATH = config.webhook_path if hasattr(config, 'webhook_path') else '/webhook'
-WEBHOOK_SECRET = config.webhook_secret if hasattr(config, 'webhook_secret') else None
+# Получение путей из конфигурации
+WEBHOOK_HOST = config.webhook_host
+WEBHOOK_PORT = config.webhook_port
+WEBHOOK_PATH = config.webhook_path
+WEBHOOK_SECRET = config.webhook_secret if config.webhook_secret else None
 
-# URL вебхука
-WEBHOOK_URL = f"https://{WEBHOOK_HOST}:{WEBHOOK_PORT}{WEBHOOK_PATH}"
+# URL вебхука (для HTTPS используем порт 443, не включаем его в URL)
+if WEBHOOK_PORT == 443:
+    WEBHOOK_URL = f"https://{WEBHOOK_HOST}{WEBHOOK_PATH}"
+else:
+    WEBHOOK_URL = f"https://{WEBHOOK_HOST}:{WEBHOOK_PORT}{WEBHOOK_PATH}"
 
 # Создание бота и диспетчера
 bot = Bot(token=config.bot_token.get_secret_value())
@@ -33,7 +36,7 @@ dp = Dispatcher()
 dp.include_router(setup_routers())
 
 
-async def on_startup(bot: Bot):
+async def on_startup():
     """Действия при запуске приложения."""
     logging.info("Запуск приложения")
     
@@ -45,7 +48,7 @@ async def on_startup(bot: Bot):
     logging.info(f"Вебхук установлен: {WEBHOOK_URL}")
 
 
-async def on_shutdown(bot: Bot):
+async def on_shutdown():
     """Действия при остановке приложения."""
     logging.info("Остановка приложения")
     

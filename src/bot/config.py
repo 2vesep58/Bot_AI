@@ -18,7 +18,7 @@ class AmveraConfig(BaseModel):
 
 class MCPConfig(BaseModel):
     """Конфигурация MCP серверов."""
-    
+
     context7_api_key: SecretStr
 
 
@@ -35,6 +35,10 @@ class Config(BaseSettings):
     bot_token: SecretStr
     amvera_llm_token: SecretStr
     context7_api_key: SecretStr
+    webhook_host: str = "localhost"
+    webhook_port: int = 443
+    webhook_path: str = "/webhook"
+    webhook_secret: str = ""
 
     @property
     def bot(self) -> BotConfig:
