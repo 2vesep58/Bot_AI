@@ -1,5 +1,10 @@
 import asyncio
 import logging
+import sys
+from pathlib import Path
+
+# Добавляем корневую директорию в path для импортов
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from aiogram import Bot, Dispatcher
 
