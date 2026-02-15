@@ -1228,3 +1228,39 @@ connector: <aiohttp.connector.TCPConnector object at 0x00000000072D4990>
 2026-02-15 13:42:50,113 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
 2026-02-15 13:43:20,744 - src.bot.services.amvera_llm - ERROR - Timeout при обращении к Amvera LLM
 2026-02-15 13:43:20,977 - aiogram.event - INFO - Update id=131773582 is handled. Duration 31327 ms by bot id=8563875743
+2026-02-15 22:21:36,352 - root - INFO - Бот запущен
+2026-02-15 22:21:36,389 - aiogram.dispatcher - INFO - Start polling
+2026-02-15 22:21:37,379 - aiogram.dispatcher - INFO - Run polling for bot @vebkodmade_Bot id=8563875743 - 'Дизайн карточек (тест)'
+2026-02-15 22:21:37,528 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-15 22:21:38,015 - aiogram.event - INFO - Update id=131773583 is handled. Duration 500 ms by bot id=8563875743
+2026-02-15 22:21:49,454 - root - INFO - Получено сообщение от пользователя 6864407494: Привет!
+2026-02-15 22:21:49,458 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-15 22:21:49,458 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-15 22:21:49,775 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-15 22:21:53,182 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-15 22:21:53,197 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9byhdhuDd3IAtXNckIU2QZV1VxNq', 'object': 'chat.completion', 'created': 1771183311, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Привет! Чем могу помочь?', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 9, 'completion_tokens': 80, 'total_tokens': 89, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 64, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-15 22:21:53,199 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Привет! Чем могу помочь?
+2026-02-15 22:21:53,284 - aiogram.event - INFO - Update id=131773584 is handled. Duration 3889 ms by bot id=8563875743
+2026-02-15 22:21:57,024 - root - INFO - Пользователь 6864407494 активировал режим ChatGPT
+2026-02-15 22:21:57,110 - aiogram.event - INFO - Update id=131773585 is handled. Duration 93 ms by bot id=8563875743
+2026-02-15 22:23:26,530 - root - INFO - Получено сообщение от пользователя 6864407494: Почему нет меню
+2026-02-15 22:23:26,543 - root - INFO - Пользователь 6864407494 находится в режиме ChatGPT
+2026-02-15 22:23:26,556 - root - INFO - Отправка запроса к Amvera LLM для пользователя 6864407494
+2026-02-15 22:23:27,029 - src.bot.services.amvera_llm - INFO - Отправка запроса к Amvera LLM: URL=https://kong-proxy.yc.amvera.ru/api/v1/models/gpt, Model=gpt-5
+2026-02-15 22:23:50,212 - src.bot.services.amvera_llm - INFO - Статус ответа от Amvera LLM: 200
+2026-02-15 22:23:50,227 - src.bot.services.amvera_llm - INFO - Успешный ответ от Amvera LLM: {'id': 'chatcmpl-D9c0Hf52CYLGxF1uOBFhQ3iBEbxtF', 'object': 'chat.completion', 'created': 1771183409, 'model': 'gpt-5-2025-08-07', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': 'Могу помочь, но не хватает контекста. Уточните, пожалуйста:\n- Где именно нет меню: сайт/веб‑приложение, программа на компьютере, телефон (Android/iOS), телевизор, или в кафе/ресторане?\n- Какое меню пропало: кнопка «Меню»/гамбургер, строка меню сверху, «Пуск» в Windows, панель меню macOS?\n- Когда это началось и что предшествовало (обновление, переход в полноэкранный режим, смена экрана)?\n- Что уже пробовали делать?\n\nПока общие быстрые проверки по частым случаям:\n- Сайт/веб‑приложение: обновите страницу (Ctrl/Cmd+F5), попробуйте инкогнито/другой браузер, отключите блокировщики, верните масштаб к 100% (Ctrl/Cmd+0), разверните окно — меню могло уехать под «гамбургер».\n- Windows (меню «Пуск»/панель задач): перезапустите Проводник (Ctrl+Shift+Esc → Диспетчер задач → Windows Explorer → Перезапустить), проверьте режим планшета, перезагрузите ПК.\n- macOS (верхняя строка меню): выйдите из полноэкранного режима (зелёная кнопка/ESC), проверьте «Автоматически скрывать строку меню» в Настройках, перезапустите Finder (Option + правый клик по иконке Finder → Перезапустить).\n- Android/iOS: перезапустите приложение/устройство, обновите приложение, проверьте значок «…» в другом месте интерфейса, сбросьте масштаб/шрифт.\n- Ресторан: часто меню по QR‑коду — спросите у персонала или проверьте столик на наличие карты/QR.\n\nОпишите вашу ситуацию (устройство/ОС, приложение/сайт, скриншот, что уже пробовали) — подскажу точное решение.', 'refusal': None, 'annotations': []}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 9, 'completion_tokens': 1215, 'total_tokens': 1224, 'prompt_tokens_details': {'cached_tokens': 0, 'audio_tokens': 0}, 'completion_tokens_details': {'reasoning_tokens': 768, 'audio_tokens': 0, 'accepted_prediction_tokens': 0, 'rejected_prediction_tokens': 0}}, 'service_tier': 'default', 'system_fingerprint': None}
+2026-02-15 22:23:50,233 - src.bot.services.amvera_llm - INFO - Извлеченный контент: Могу помочь, но не хватает контекста. Уточните, пожалуйста:
+- Где именно нет меню: сайт/веб‑приложение, программа на компьютере, телефон (Android/iOS), телевизор, или в кафе/ресторане?
+- Какое меню пропало: кнопка «Меню»/гамбургер, строка меню сверху, «Пуск» в Windows, панель меню macOS?
+- Когда это началось и что предшествовало (обновление, переход в полноэкранный режим, смена экрана)?
+- Что уже пробовали делать?
+
+Пока общие быстрые проверки по частым случаям:
+- Сайт/веб‑приложение: обновите страницу (Ctrl/Cmd+F5), попробуйте инкогнито/другой браузер, отключите блокировщики, верните масштаб к 100% (Ctrl/Cmd+0), разверните окно — меню могло уехать под «гамбургер».
+- Windows (меню «Пуск»/панель задач): перезапустите Проводник (Ctrl+Shift+Esc → Диспетчер задач → Windows Explorer → Перезапустить), проверьте режим планшета, перезагрузите ПК.
+- macOS (верхняя строка меню): выйдите из полноэкранного режима (зелёная кнопка/ESC), проверьте «Автоматически скрывать строку меню» в Настройках, перезапустите Finder (Option + правый клик по иконке Finder → Перезапустить).
+- Android/iOS: перезапустите приложение/устройство, обновите приложение, проверьте значок «…» в другом месте интерфейса, сбросьте масштаб/шрифт.
+- Ресторан: часто меню по QR‑коду — спросите у персонала или проверьте столик на наличие карты/QR.
+
+Опишите вашу ситуацию (устройство/ОС, приложение/сайт, скриншот, что уже пробовали) — подскажу точное решение.
+2026-02-15 22:23:50,479 - aiogram.event - INFO - Update id=131773586 is handled. Duration 23952 ms by bot id=8563875743
