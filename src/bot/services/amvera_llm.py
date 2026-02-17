@@ -39,7 +39,9 @@ class AmveraLLMService:
                     "role": "user",
                     "content": user_message
                 }
-            ]
+            ],
+            "temperature": 0.7,
+            "max_tokens": 2000
         }
 
         headers = {
@@ -55,6 +57,8 @@ class AmveraLLMService:
 
         try:
             self.logger.info(f"Отправка запроса к Amvera LLM: URL={self.AMVERA_LLM_URL}, Model={self.MODEL}")
+            self.logger.debug(f"Payload: {payload}")
+            self.logger.debug(f"Headers: {headers}")
             async with aiohttp.ClientSession() as session:
                 async with session.post(
                     self.AMVERA_LLM_URL,
