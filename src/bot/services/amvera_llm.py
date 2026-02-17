@@ -13,7 +13,7 @@ from src.bot.config import Config
 class AmveraLLMService:
     """Сервис для работы с Amvera LLM."""
 
-    AMVERA_LLM_URL = "https://lllm.amvera.io/api/v1/models/gpt"
+    AMVERA_LLM_URL = "https://kong-proxy.yc.amvera.ru/api/v1/models/gpt"
     MODEL = "gpt-5"
 
     def __init__(self, config: Config):
@@ -61,10 +61,10 @@ class AmveraLLMService:
                     json=payload,
                     headers=headers,
                     ssl=ssl_context,
-                    timeout=aiohttp.ClientTimeout(total=120)
+                    timeout=aiohttp.ClientTimeout(total=30)
                 ) as response:
                     self.logger.info(f"Статус ответа от Amvera LLM: {response.status}")
-                    
+
                     if response.status == 200:
                         result = await response.json()
                         self.logger.info(f"Успешный ответ от Amvera LLM: {result}")
