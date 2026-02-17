@@ -13,7 +13,7 @@ from src.bot.config import Config
 class AmveraLLMService:
     """Сервис для работы с Amvera LLM."""
 
-    AMVERA_LLM_URL = "https://kong-proxy.yc.amvera.ru/api/v1/models/gpt"
+    AMVERA_LLM_URL = "https://lllm.amvera.io/api/v1/models/gpt"
     MODEL = "gpt-5"
 
     def __init__(self, config: Config):
