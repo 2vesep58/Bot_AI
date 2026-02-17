@@ -11,3 +11,11 @@ run:
   command: python -m src.bot.main
   persistenceMount: /data
   containerPort: "80"
+  env:
+    BOT_TOKEN: ${BOT_TOKEN}
+    AMVERA_LLM_TOKEN: ${AMVERA_LLM_TOKEN}
+    CONTEXT7_API_KEY: ${CONTEXT7_API_KEY}
+    WEBHOOK_HOST: ${WEBHOOK_HOST}
+    WEBHOOK_PORT: ${WEBHOOK_PORT}
+    WEBHOOK_PATH: ${WEBHOOK_PATH}
+    WEBHOOK_SECRET: ${WEBHOOK_SECRET}
